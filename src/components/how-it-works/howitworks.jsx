@@ -1,7 +1,10 @@
 import styles from "./howitworks.module.css";
 import phonelogindemo from "../../assets/images/logindemo.png";
+import phonelogindemoMobile from "../../assets/images/signindemo.png";
 import dashboarddemo from "../../assets/images/dashboarddemo.png";
+import dashboarddemoMobile from "../../assets/images/delicious.png";
 import checkoutdemo from "../../assets/images/checkoutdemo.png";
+import checkoutdemoMobile from "../../assets/images/paymentdemo.png";
 
 function Howitworks() {
   return (
@@ -10,7 +13,8 @@ function Howitworks() {
         <h1 className={styles.title}>How the app works</h1>
         <div className={styles.logindemo}>
           <div className={styles.logindemoimage}>
-            <img src={phonelogindemo} alt="" />
+            <img className={styles.demo} src={phonelogindemo} alt="" />
+            <img className={styles.demoMobile} src={phonelogindemoMobile} alt="" />
           </div>
           <div className={styles.logindemotext}>
             <h4>Create an account</h4>
@@ -35,12 +39,14 @@ function Howitworks() {
             </p>
           </div>
           <div className={styles.logindemoimage}>
-            <img src={dashboarddemo} alt="" />
+            <img className={styles.demo} src={dashboarddemo} alt="" />
+            <img className={styles.demoMobile} src={dashboarddemoMobile} alt="" />
           </div>
         </div>
         <div className={styles.logindemo}>
           <div className={styles.logindemoimage}>
-            <img src={checkoutdemo} alt="" />
+            <img className={styles.demo} src={checkoutdemo} alt="" />
+            <img className={styles.demoMobile} src={checkoutdemoMobile} alt="" />
           </div>
           <div className={styles.logindemotext}>
             <h4>Checkout</h4>

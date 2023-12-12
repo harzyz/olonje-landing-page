@@ -59,6 +59,14 @@
   padding: 16px 0px;
   border-radius: 30px;
 }
+.playstore:hover{
+  background-color: #FFF;
+  color: #FA4A0C;
+}
+.appstore:hover{
+  background-color: #FA4A0C;
+  color: #FFF;
+}
 .prototype{
   display: flex;
   flex-direction: column;
@@ -69,12 +77,9 @@
 .prototypephone{
   height: 640px;
 }
-/* .prototypephonemob{
-  display: none;
-} */
 .line{
-  border: 3px solid #E4E4E4;
-  width: 80%;
+  border: 1px solid #E4E4E4;
+  width: 60%;
 }
 @media screen and (max-width: 450px) {
   .heroImage{
@@ -87,6 +92,9 @@
   .heroText p{
     margin: 0;
     color: #737373;
+  }
+  .line{
+    width: 100%;
   }
   .heroText p:last-child{
     font-weight: 500;

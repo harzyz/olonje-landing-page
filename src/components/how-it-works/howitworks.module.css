@@ -12,6 +12,9 @@
   align-items: center;
   /* text-align: center; */
 }
+.demoMobile{
+  display: none;
+}
 .logindemo{
   width: 100%;
   display: flex;
@@ -65,11 +68,16 @@
   }
   .logindemoimage{
     width: 100%;
-    /* border: 1px solid red; */
   }
   .logindemoimage img{
     width: 100%;
     height: 100%;
+  }
+  .demoMobile{
+    display: block;
+  }
+  .demo{
+    display: none;
   }
   .logindemotext{
     width: 100%;
