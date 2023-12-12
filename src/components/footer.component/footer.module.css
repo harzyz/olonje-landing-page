@@ -1,0 +1,125 @@
+.wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat';
+}
+.heroImage{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.backGr{
+  width: 100%;
+  height: 500px;
+}
+.heroText{
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  color: #FFF;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.heroText p{
+  font-weight: 700;
+  margin: 0;
+}
+.heroText p:last-child{
+  font-weight: 500;
+}
+.heroText h1{
+  font-size: 58px;
+  font-weight: 700;
+  margin: 0;
+}
+.btnGroup{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.playstore{
+  /* width: 236px; */
+  font-size: 24px;
+  background-color: #FA4A0C;
+  color: #FFF;
+  border: none;
+  padding: 18px 31px;
+  border-radius: 10px;
+}
+.appstore{
+  font-size: 24px;
+  background-color: transparent;
+  color: #FFF;
+  /* width: 236px; */
+  border: 1px solid #FFF;
+  padding: 18px 31px;
+  border-radius: 10px;
+}
+.footersocials{
+  width: 100%;
+  display: flex;
+  background-color: #FFF;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 150px;
+}
+.socials{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .heroImage{
+    display: none;
+  }
+  .heroText{
+    color: #FFF;
+    padding: 10px;
+    background-color: #252B42;
+  }
+  .heroText p{
+    margin: 0;
+    color: #737373;
+  }
+  .heroText p:last-child{
+    font-weight: 500;
+    color: #737373;
+  }
+  .heroText br{
+    display: none;
+  }
+  .heroText h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .prototype{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -100px;
+  }
+  .logo{
+    display: none;
+  }
+  .btnGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+  }
+  .appstore{
+    color: #FA4A0C;
+    border: 1px solid #FA4A0C;
+  }
+  .footersocials{
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 0;
+  }
+}

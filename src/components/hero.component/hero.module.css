@@ -1,0 +1,127 @@
+.wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat';
+}
+.heroImage{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.backGr{
+  width: 100%;
+  height: 600px;
+}
+.heroText{
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  color: #FFF;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.heroText p{
+  font-weight: 700;
+  margin: 0;
+}
+.heroText p:last-child{
+  font-weight: 500;
+}
+.heroText h1{
+  font-size: 58px;
+  font-weight: 700;
+  margin: 0;
+}
+.btnGroup{
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+.playstore{
+  width: 236px;
+  font-size: 24px;
+  background-color: #FA4A0C;
+  color: #FFF;
+  border: none;
+  padding: 16px 0px;
+  border-radius: 30px;
+}
+.appstore{
+  font-size: 24px;
+  background-color: transparent;
+  color: #FFF;
+  width: 236px;
+  border: 1px solid #FFF;
+  padding: 16px 0px;
+  border-radius: 30px;
+}
+.prototype{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: -150px;
+}
+.prototypephone{
+  height: 640px;
+}
+/* .prototypephonemob{
+  display: none;
+} */
+.line{
+  border: 3px solid #E4E4E4;
+  width: 80%;
+}
+@media screen and (max-width: 450px) {
+  .heroImage{
+    display: none;
+  }
+  .heroText{
+    color: #252B42;
+    padding: 10px;
+  }
+  .heroText p{
+    margin: 0;
+    color: #737373;
+  }
+  .heroText p:last-child{
+    font-weight: 500;
+    color: #737373;
+  }
+  .heroText br{
+    display: none;
+  }
+  .heroText h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .prototype{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -100px;
+  }
+  .prototypephone{
+    display: none;
+  }
+  .prototypephonemob{
+    width: 100%;
+    display: block;
+  }
+  .btnGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+  }
+  .appstore{
+    color: #FA4A0C;
+    border: 1px solid #FA4A0C;
+  }
+}
